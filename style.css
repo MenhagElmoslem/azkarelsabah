@@ -1,0 +1,121 @@
+/* style.css */
+
+/* تنسيق الحاوية العامة */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl; /* جعل النصوص تظهر من اليمين لليسار */
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* تنسيق الرأس */
+  header {
+    background-color: #13865a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  /* تنسيق القائمة */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* تنسيق المنطقة الرئيسية */
+  main {
+    padding: 20px;
+  }
+  
+  /* تنسيق حاوية الأذكار */
+  .dzikr-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* تنسيق كل ذكر */
+  .dzikr {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: opacity 1s ease-out; /* إضافة تأثير التلاشي لمدة ثانية */
+    opacity: 1; /* العنصر مرئي في البداية */
+    cursor: pointer; /* تغيير المؤشر ليصبح يدًا عند الضغط */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dzikr:hover {
+    background-color: #f5f5f5; /* تغيير الخلفية عند المرور على العنصر */
+  }
+  
+  /* تنسيق العدادات */
+  .counter {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  /* عند إضافة فئة "hidden"، يختفي العنصر تدريجياً */
+  .dzikr.hidden {
+    opacity: 0; /* تغيير التمويه ليختفي تدريجيًا */
+  }
+  
+  /* تنسيق التذييل */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #13865a;
+    color: white;
+  }
+    /* عداد الأذكار الإجمالي */
+.total-counter {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* تأثيرات الأذكار */
+.dzikr {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  transition: opacity 1s ease-out;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.dzikr.hidden {
+  opacity: 0;
+}
